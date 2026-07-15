@@ -74,9 +74,10 @@ Page 3 — Model Insights: Risk tier table, default probability distribution, mo
 
 
 
-Dataset
-
+## Dataset 
 Datensatz
+
+https://archive.ics.uci.edu/dataset/144/statlog+german+credit+data
 
 PropertyDetailSourceUCI Machine Learning RepositoryDatasetStatlog (German Credit Data) — id=144Linkhttps://archive.ics.uci.edu/dataset/144/statlog+german+credit+dataSize1,000 loan applicants · 20 features · binary good/bad risk labelClass balance70% good risk · 30% bad riskNoteRaw categorical codes (A11, A34 etc.) decoded into readable labels in Phase 1
 
