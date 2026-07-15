@@ -54,50 +54,15 @@ Loan duration & credit amount (Laufzeit & Kreditbetrag)
 
 Projektphasen
 
-PhaseDescriptionBeschreibungTools1Problem definition & datasetProblemdefinition & DatensatzUCI, ucimlrepo, Python2Data engineering & SQL pipelineDatenpipeline & SQL-DatenbankSQLite, pandas3EDA & feature engineeringExplorative Analyse & Feature Engineeringmatplotlib, seaborn4ML modelling & evaluationModellierung & EvaluationXGBoost, scikit-learn, SHAP5Interactive dashboardInteraktives DashboardPower BI Desktop6Documentation & portfolioDokumentation & PortfolioGitHub, Markdown
+Phase Description Beschreibung Tools1 Problem definition & datasetProblemdefinition & DatensatzUCI, ucimlrepo, Python2Data engineering & SQL pipelineDatenpipeline & SQL-DatenbankSQLite, pandas3EDA & feature engineeringExplorative Analyse & Feature Engineeringmatplotlib, seaborn4ML modelling & evaluationModellierung & EvaluationXGBoost, scikit-learn, SHAP5Interactive dashboardInteraktives DashboardPower BI Desktop6Documentation & portfolioDokumentation & PortfolioGitHub, Markdown
 
 
-## Project Structure
-
-Projektstruktur
-
-credit-risk-germany/
-│
-├── README.md                        ← English project description
-├── LIESMICH.md                      ← Deutsche Zusammenfassung
-├── requirements.txt                 ← Python dependencies
-│
-├── notebooks/
-│   ├── 01_load_data.ipynb           ← Phase 1: Data loading & decoding
-│   ├── 02_eda.ipynb                 ← Phase 3: Exploratory data analysis
-│   └── 03_modelling.ipynb           ← Phase 4: ML modelling & SHAP
-│
-├── src/
-│   ├── pipeline.py                  ← Data loading & cleaning functions
-│   ├── features.py                  ← Feature engineering functions
-│   └── model.py                     ← Model training & evaluation
-│
-├── dashboard/
-│   └── credit_risk_dashboard.pdf    ← Power BI 3-page report export
-│
-├── reports/
-│   ├── 01_target_distribution.png
-│   ├── 02_numerical_distributions.png
-│   ├── 03_default_by_category.png
-│   ├── 04_correlation_target.png
-│   ├── 05_age_vs_credit_scatter.png
-│   ├── 06_roc_pr_curves.png
-│   ├── 07_confusion_matrices.png
-│   ├── 08_shap_summary.png
-│   └── 09_shap_bar.png
-│
-└── data/
-    └── README.md                    ← Data source info (no raw data stored)
 
 
 ## Dashboard Preview
-!
-
+![screenshot](gcs1.jpg)
+![screenshot](gcs2.jpg)
+![screenshot](gcs3.jpg)
 Dashboard-Vorschau
 
 The Power BI dashboard consists of 3 pages — see dashboard/credit_risk_dashboard.pdf:
@@ -120,23 +85,21 @@ Der Datensatz enthält 1.000 Kreditanträge mit 20 Merkmalen aus dem deutschen B
 Die Rohdaten wurden in Phase 1 in lesbare Labels übersetzt.
 
 
-
-
 ## How to Run
 
 Ausführung
 
 bash# 1. Clone the repository
-git clone https://github.com/yourusername/credit-risk-germany.git
+git clone https://github.com/ambroz72/credit-risk-germany.git
 cd credit-risk-germany
 
 # 2. Install dependencies
 pip install -r requirements.txt
 
 # 3. Run notebooks in order
-jupyter notebook notebooks/01_load_data.ipynb
-jupyter notebook notebooks/02_eda.ipynb
-jupyter notebook notebooks/03_modelling.ipynb
+jupyter notebook notebooks/German_Credit_phase1.ipynb
+jupyter notebook notebooks/german_Credit_phase1.2.ipynb
+jupyter notebook notebooks/ML modeling & evaluatioin.ipynb
 
 Or open each notebook directly in Google Colab using the badge at the top of each file.
 
@@ -146,7 +109,6 @@ Or open each notebook directly in Google Colab using the badge at the top of eac
 Regulatorischer Kontext — Deutscher Finanzmarkt
 
 This project was designed with the German financial regulatory environment in mind:
-
 
 DSGVO (GDPR): No personally identifiable data stored or shared
 Explainable AI (XAI): SHAP values provide full feature-level transparency for every prediction — aligned with EU AI Act requirements for high-risk financial decisions
