@@ -60,19 +60,20 @@ Phase Description Beschreibung Tools1 Problem definition & datasetProblemdefinit
 
 
 ## Dashboard Preview
+Page 1 — Executive Overview: Portfolio KPIs, overall default rate, default rate by loan purpose and checking account status
+
 ![screenshot](cr1.jpg)
+
+Page 2 — Customer Segmentation: Risk breakdown by age group, employment, housing — with interactive slicers
+
 ![screenshot](cr2.jpg)
+
+Page 3 — Model Insights: Risk tier table, default probability distribution, model summary 
+
 ![screenshot](cr3.jpg)
 Dashboard-Vorschau
 
 The Power BI dashboard consists of 3 pages — see dashboard/credit_risk_dashboard.pdf:
-
-
-Page 1 — Executive Overview: Portfolio KPIs, overall default rate, default rate by loan purpose and checking account status
-Page 2 — Customer Segmentation: Risk breakdown by age group, employment, housing — with interactive slicers
-Page 3 — Model Insights: Risk tier table, default probability distribution, model summary
-
-
 
 ## Dataset 
 Datensatz
