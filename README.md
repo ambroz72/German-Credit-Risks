@@ -60,9 +60,9 @@ Phase Description Beschreibung Tools1 Problem definition & datasetProblemdefinit
 
 
 ## Dashboard Preview
-![screenshot](gcs1.jpg)
-![screenshot](gcs2.jpg)
-![screenshot](gcs3.jpg)
+![screenshot](cr1.jpg)
+![screenshot](cr2.jpg)
+![screenshot](cr3.jpg)
 Dashboard-Vorschau
 
 The Power BI dashboard consists of 3 pages — see dashboard/credit_risk_dashboard.pdf:
